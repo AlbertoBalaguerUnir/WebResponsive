@@ -19,7 +19,7 @@
     --button-hover:#8c2c87;
 }
 body{
-  background: linear-gradient(270deg, rgb(123, 57, 133), rgb(48, 178, 210));
+  background: linear-gradient(270deg, rgb(32, 68, 77), rgb(48, 178, 210));
   
   }
 /*HEADER*/
@@ -116,7 +116,7 @@ header .planet{
 }
 /*Contenido*/
 .div-l{
-    background-color: rgba(220, 159, 255, 0.301);
+    /*background-color: rgba(136, 189, 218, 0.42);*/
     color: var(--text_3);
     border-radius: 2vh;
     margin: 1vh;
@@ -142,7 +142,7 @@ header .planet{
     font-size: 2rem;
 }
 .div-r{
-    background-color: rgba(220, 159, 255, 0.301);
+    background-color: rgba(164, 191, 220, 0.419);
     color: var(--text_3);
     border-radius: 2vh;
     margin: 1vh;
@@ -180,7 +180,7 @@ footer{
     transition: 0.3s;
 }
 .redesSociales li:hover a{
-    color: var(--button-hover)
+    color: var(--text_2)
 }
 /*Formulario*/
 form{
