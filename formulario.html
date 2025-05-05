@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="">
+        <header class="cabeceraForm">
+            <h3>Envio de noticias para el portal tecnológico</h3>
+        </header>
+    
+        <fieldset class="DatosPersonales">
+            <legend>Datos personales</legend>
+            <div>
+                <label>Nombre completo:
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </label>
+                <label>Teléfono:
+                    <input type="tel" name="telefono" placeholder="Teléfono de contacto">
+                </label>
+                <label>¿Representas a un medio de comunicación?
+                    <input type="text" name="medio" placeholder="Nombre del medio (opcional)">
+                </label>
+            </div>
+        </fieldset>
+    
+        <fieldset class="Informacion">
+            <legend>Información de la noticia</legend>
+            <label>Título de la noticia:
+                <input type="text" name="titulo_noticia" placeholder="Título de la noticia" required>
+            </label>
+            <label>Categoría:
+                <select name="categoria" required>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                    <option value="startups">Startups</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                    <option value="ciberseguridad">Ciberseguridad</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </label>
+            <label>Contenido de la noticia:
+                <textarea name="contenido" placeholder="Escribe aquí el contenido de la noticia..."></textarea>
+            </label>
+            <label>Enlaces o referencias (opcional):
+                <input type="text" name="referencias" placeholder="Enlace a referencias o fuentes">
+            </label>
+        </fieldset>
+    
+        <fieldset class="Confirmacion">
+            <legend>Confirmación</legend>
+            <label>
+                <input type="checkbox" name="privacidad" required> Acepto la política de privacidad y el envío de mis datos.
+            </label>
+        </fieldset>
+    
+        <div class="boton">
+            <button type="submit">Enviar noticia</button>
+        </div>
+    </form>
+</html>

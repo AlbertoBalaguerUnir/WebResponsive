@@ -1,0 +1,244 @@
+/*Importamos el código para CSS de googlefonts: */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+    
+    /*especificamos la font-family: */
+    font-family: "Ubuntu", sans-serif;
+}
+:root{
+    --background_1 : rgb(123, 57, 133);
+    --background_2: rgb(48, 178, 210);
+    --text_1: #e5e5e5;
+    --text_2: #f7a0b7;
+    --text_3: #ffe0fd;;
+    --background: #252630;
+    --button-hover:#8c2c87;
+}
+body{
+  background: linear-gradient(250deg, rgb(123, 57, 133), rgb(48, 178, 210));    
+}
+/*HEADER*/
+.banner{
+    text-align: flex;
+    height: 90px;
+    background-image: url(../img/header.png);
+ 
+}
+header .logo{
+    vertical-align:bottom;
+    color: var(--text_3);
+    font-size: 4rem;
+    text-decoration: none;
+    padding: 0 10px; /*top/bottom & left/right*/
+    font-family: "Ubuntu", sans-serif;
+    display: inline-block;
+}
+header .planet{
+    margin-left: 20px;
+    vertical-align:bottom;
+    color: var(--text_2);
+    font-size: 4rem;
+    text-decoration: none;
+    padding: 10 10px; /*top/bottom & left/right*/
+    display: inline-block;
+}
+/*Barra de navegacion*/
+.navbar {
+    background-image: url(../img/nav.png);
+    opacity: 0.8;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+}
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.navbar nav ul li{
+    position: relative;
+    list-style: none;
+    margin: 15px 10px;
+}
+.navbar nav ul li a {
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    color: var(--text_3);
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1rem;
+    /*
+    background: rgba(216, 130, 242, 0.179);
+    border-radius: 10px;
+    */
+    
+}
+.navbar nav ul li a:hover {
+    /*border-bottom: 3px solid var(--text_2);*/
+    margin: 5px;
+    transition: 0.75s;
+    color: var(--text_2);
+    /*
+    padding: 10px;
+    background-color: aqua;
+    */
+}
+.navbar nav ul li ul {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    top: 100%;
+}
+.navbar nav ul li:hover > ul {
+    display: block;
+}
+.navbar nav ul li ul li {
+    margin: 0;
+    text-align: left;
+}
+.navbar nav ul li ul li a {
+    display: inline-block;
+    color: var(--text_1);
+    font-weight: 600;
+    padding: 10px;
+    font-size: 1rem;
+    /*
+    background: var(--background_1);
+    border-radius: 10px;
+    */
+}
+/*Contenido*/
+.div-l{
+    background-color: rgba(220, 159, 255, 0.301);
+    color: var(--text_3);
+    border-radius: 2vh;
+    margin: 1vh;
+    margin-top: 1%;
+    display: inline-block;
+    width: 65%;
+    height: 50vh;
+    vertical-align:top;
+    text-align: justify;
+    padding: 2%;
+}
+.div-l header{
+    display: flex;
+}
+.titulo1{
+    font-size: 20px;
+    vertical-align:bottom;
+    display: inline-block;
+    text-align: flex;
+}
+.code{
+    color: var(--text_3);
+    font-size: 2rem;
+}
+.div-r{
+    background-color: rgba(220, 159, 255, 0.301);
+    color: var(--text_3);
+    border-radius: 2vh;
+    margin: 1vh;
+    margin-top: 1%;
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    vertical-align:top;
+    text-align: justify;
+    padding: 2%;
+}
+.div-r header{
+    display: flex;
+}
+footer{
+    margin-top: 20px;
+    text-align: right;  
+}
+/*REDES SOCIALES*/
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: var(--text_3);
+    font-size: 2.2rem;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: var(--button-hover)
+}
+/*Formulario*/
+form{
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 12px;
+    background-color: rgb(240, 240, 240);
+    margin:auto;
+    margin-top: 10px;
+    width: 800px;
+    padding-bottom: 10px;
+}
+.cabeceraForm{
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    text-transform: uppercase;
+}
+fieldset{
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px;
+    border-style:solid;
+}
+input{
+    border-radius: 3px;
+    border: none;
+    margin: 2px;
+    padding-left: 4px;
+}
+legend{
+    font-weight:bolder;
+    background-color: white;
+    padding: 2px 5px;
+    border: 3px;
+    border-radius: 5px;
+}
+.DatosPersonales{
+    border-color: rgb(201, 201, 201);
+    background-color: rgb(201, 201, 201);
+}
+.DatosPersonales div label{
+    display: inline-block;
+}
+.DatosPersonales div label input {
+    display: block;
+}
+.Informacion{
+    border-color: rgb(104, 166, 166);
+    background-color: rgb(104, 166, 166);
+}
+textarea {
+    display: block;
+    width: 40rem;
+    height: 5rem;
+}
+.Confirmacion{
+    border-color: rgb(245, 215, 159);
+    background-color: rgb(245, 215, 159);
+}
+.boton{
+    text-align: center;
+    margin-top: 20px;
+}
