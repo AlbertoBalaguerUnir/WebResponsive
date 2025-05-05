@@ -184,16 +184,18 @@ footer{
 }
 /*Formulario*/
 form{
-    font-family: Arial, Helvetica, sans-serif;    
+    color: var(--background);
+    font-family: "Ubuntu", sans-serif;    
     font-size: 12px;
-    background-color: rgb(240, 240, 240);
     margin:auto;
     margin-top: 10px;
     width: 800px;
     padding-bottom: 10px;
 }
 .cabeceraForm{
-    background-color: rgb(190, 190, 190);
+    margin-top: 20px;
+    color: var(--text_3);
+    font-size: 15px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -207,19 +209,20 @@ fieldset{
 input{
     border-radius: 3px;
     border: none;
-    margin: 2px;
+    margin: 5px;
     padding-left: 4px;
 }
 legend{
+    border-color: rgb(88, 76, 96);
+    color: #614e71;
     font-weight:bolder;
     background-color: white;
     padding: 2px 5px;
-    border: 3px;
     border-radius: 5px;
 }
 .DatosPersonales{
-    border-color: rgb(201, 201, 201);
-    background-color: rgb(201, 201, 201);
+    border-color: rgb(88, 76, 96);
+    background-color: rgb(222, 217, 233);
 }
 .DatosPersonales div label{
     display: inline-block;
@@ -228,8 +231,8 @@ legend{
     display: block;
 }
 .Informacion{
-    border-color: rgb(104, 166, 166);
-    background-color: rgb(104, 166, 166);
+    border-color: rgb(88, 76, 96);
+    background-color: rgb(211, 205, 225);
 }
 textarea {
     display: block;
@@ -237,8 +240,8 @@ textarea {
     height: 5rem;
 }
 .Confirmacion{
-    border-color: rgb(245, 215, 159);
-    background-color: rgb(245, 215, 159);
+    border-color: rgb(88, 76, 96);
+    background-color: rgb(175, 167, 194);
 }
 .boton{
     text-align: center;
