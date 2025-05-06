@@ -248,7 +248,13 @@ footer {
 }
 
 /*REDES SOCIALES*/
-.redesSociales {
+.contenedorRS {
+    position: relative;
+    display: flex;
+    right: 0px;
+    bottom: 0px;
+}
+.contenedorRS ul {
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -256,19 +262,20 @@ footer {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    
 }
 
-.redesSociales li {
+.contenedorRS ul li {
     padding: 10px;
 }
 
-.redesSociales li a {
+.contenedorRS ul li a {
     color: var(--text_3);
     font-size: 2.2rem;
     transition: 0.3s;
 }
 
-.redesSociales li:hover a {
+.contenedorRS ul li:hover a {
     color: var(--text_2)
 }
 
@@ -351,8 +358,8 @@ textarea {
 
 /*QUIÉNES SOMOS*/
 .imgQS {
-    height: 250px;
-    width: 470px;
+    height: 20rem;
+    width: 40rem;
     /* o ajusta al tamaño que desees */
     background-image: url(../img/QS.jpg);
     background-size: cover;
@@ -362,6 +369,26 @@ textarea {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 40px 20px 20px 20px;
+}
+
+.div-quienesSomos {
+    color: var(--text_3);
+    border-radius: 2vh;
+    margin: 1vh;
+    margin-top: 1%;
+    display: inline-block;
+    width: 65%;
+    height: 50vh;
+    vertical-align: top;
+    text-align: justify;
+    padding: 2%;
+}
+.div-quienesSomos h2 {
+    margin: 1rem 0rem;
+    font-size: 2rem;
+}
+.div-quienesSomos article span {
+    font-size: 1.5rem;
 }
 
 .div-mision {
@@ -376,10 +403,17 @@ textarea {
     padding: 2%;
     float: right;
 }
+.div-mision h2 {
+    margin: 1rem 0rem;
+    font-size: 2rem;
+}
+.div-mision article span {
+    font-size: 1.5rem;
+}
 
 .imgQS-2 {
-    height: 250px;
-    width: 470px;
+    height: 20rem;
+    width: 40rem;
     background-image: url(../img/imgQS2.png);
     background-size: cover;
     background-position: center;
@@ -392,8 +426,8 @@ textarea {
 
 
 .imgQS-3 {
-    height: 250px;
-    width: 480px;
+    height: 20rem;
+    width: 40rem;
     background-image: url(../img/trabajamos.png);
     background-size: cover;
     background-position: center;
@@ -404,6 +438,7 @@ textarea {
     /* sombra suave */
     margin: 40px 20px 20px 20px;
     /* espacio alrededor, especialmente a la izquierda */
+    
 }
 
 .div-trabajo {
@@ -419,8 +454,3 @@ textarea {
     padding: 2%;
 }
 
-.contenedorRS {
-    position: relative;
-    width: 100%;
-
-}
