@@ -1,52 +1,62 @@
 /*Importamos el código para CSS de googlefonts: */
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-   
-    
+
+
     /*especificamos la font-family: */
     font-family: "Ubuntu", sans-serif;
 }
-:root{
-    --background_1 : rgb(123, 57, 133);
+
+:root {
+    --background_1: rgb(123, 57, 133);
     --background_2: rgb(48, 178, 210);
     --text_1: #e5e5e5;
     --text_2: #f7a0b7;
-    --text_3: #ffe0fd;;
+    --text_3: #ffe0fd;
+    ;
     --background: #252630;
-    --button-hover:#8c2c87;
+    --button-hover: #8c2c87;
 }
-body{
-  background: linear-gradient(270deg, rgb(32, 68, 77), rgb(48, 178, 210));
-  
-  }
+
+body {
+    background: linear-gradient(270deg, rgb(32, 68, 77), rgb(48, 178, 210));
+
+}
+
 /*HEADER*/
-.banner{
+.banner {
     text-align: flex;
     height: 90px;
     background-image: url(../img/header.png);
- 
+
 }
-header .logo{
-    vertical-align:bottom;
+
+header .logo {
+    vertical-align: bottom;
     color: var(--text_3);
     font-size: 4rem;
     text-decoration: none;
-    padding: 0 10px; /*top/bottom & left/right*/
+    padding: 0 10px;
+    /*top/bottom & left/right*/
     font-family: "Ubuntu", sans-serif;
     display: inline-block;
 }
-header .planet{
+
+header .planet {
     margin-left: 20px;
-    vertical-align:bottom;
+    vertical-align: bottom;
     color: var(--text_2);
     font-size: 4rem;
     text-decoration: none;
-    padding: 10 10px; /*top/bottom & left/right*/
+    padding: 10 10px;
+    /*top/bottom & left/right*/
     display: inline-block;
 }
+
 /*Barra de navegacion*/
 .navbar {
     /*background-image: url(../img/nav.png);*/
@@ -57,16 +67,19 @@ header .planet{
     justify-content: center;
     height: 2.5rem;
 }
+
 .navbar nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
 }
-.navbar nav ul li{
+
+.navbar nav ul li {
     position: relative;
     list-style: none;
     margin: 10px 10px;
 }
+
 .navbar nav ul li a {
     font-family: "Ubuntu", sans-serif;
     text-decoration: none;
@@ -78,8 +91,9 @@ header .planet{
     background: rgba(216, 130, 242, 0.179);
     border-radius: 10px;
     */
-    
+
 }
+
 .navbar nav ul li a:hover {
     /*border-bottom: 3px solid var(--text_2);*/
     margin: 5px;
@@ -90,19 +104,23 @@ header .planet{
     background-color: aqua;
     */
 }
+
 .navbar nav ul li ul {
     display: none;
     position: absolute;
     bottom: 20px;
     top: 100%;
 }
-.navbar nav ul li:hover > ul {
+
+.navbar nav ul li:hover>ul {
     display: block;
 }
+
 .navbar nav ul li ul li {
     margin: 0;
     text-align: left;
 }
+
 .navbar nav ul li ul li a {
     display: inline-block;
     color: var(--text_3);
@@ -114,8 +132,9 @@ header .planet{
     border-radius: 10px;
     */
 }
+
 /*Contenido*/
-.div-l{
+.div-l {
     /*background-color: rgba(136, 189, 218, 0.42);*/
     color: var(--text_3);
     border-radius: 2vh;
@@ -124,24 +143,28 @@ header .planet{
     display: inline-block;
     width: 65%;
     height: 50vh;
-    vertical-align:top;
+    vertical-align: top;
     text-align: justify;
     padding: 2%;
 }
-.div-l header{
+
+.div-l header {
     display: flex;
 }
-.titulo1{
+
+.titulo1 {
     font-size: 20px;
-    vertical-align:bottom;
+    vertical-align: bottom;
     display: inline-block;
     text-align: flex;
 }
-.code{
+
+.code {
     color: var(--text_3);
     font-size: 2rem;
 }
-.div-r{
+
+.div-r {
     background-color: rgba(164, 191, 220, 0.419);
     color: var(--text_3);
     border-radius: 2vh;
@@ -150,19 +173,22 @@ header .planet{
     display: inline-block;
     width: 30%;
     height: 50vh;
-    vertical-align:top;
+    vertical-align: top;
     text-align: justify;
     padding: 2%;
 }
-.div-r header{
+
+.div-r header {
     display: flex;
 }
-footer{
+
+footer {
     margin-top: 20px;
-    text-align: right;  
+    text-align: right;
 }
+
 /*REDES SOCIALES*/
-.redesSociales{
+.redesSociales {
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -171,79 +197,170 @@ footer{
     align-items: center;
     list-style: none;
 }
-.redesSociales li{
+
+.redesSociales li {
     padding: 10px;
 }
-.redesSociales li a{
+
+.redesSociales li a {
     color: var(--text_3);
     font-size: 2.2rem;
     transition: 0.3s;
 }
-.redesSociales li:hover a{
+
+.redesSociales li:hover a {
     color: var(--text_2)
 }
+
 /*Formulario*/
-form{
+form {
     color: var(--background);
-    font-family: "Ubuntu", sans-serif;    
+    font-family: "Ubuntu", sans-serif;
     font-size: 12px;
-    margin:auto;
+    margin: auto;
     margin-top: 10px;
     width: 800px;
     padding-bottom: 10px;
 }
-.cabeceraForm{
+
+.cabeceraForm {
     margin-top: 20px;
     color: var(--text_3);
     font-size: 15px;
     text-align: center;
     text-transform: uppercase;
 }
-fieldset{
+
+fieldset {
     margin: 15px;
     padding: 5px;
     border-radius: 5px;
     border: 1px;
-    border-style:solid;
+    border-style: solid;
 }
-input{
+
+input {
     border-radius: 3px;
     border: none;
     margin: 5px;
     padding-left: 4px;
 }
-legend{
+
+legend {
     border-color: rgb(88, 76, 96);
     color: #614e71;
-    font-weight:bolder;
+    font-weight: bolder;
     background-color: white;
     padding: 2px 5px;
     border-radius: 5px;
 }
-.DatosPersonales{
+
+.DatosPersonales {
     border-color: rgb(88, 76, 96);
     background-color: rgb(222, 217, 233);
 }
-.DatosPersonales div label{
+
+.DatosPersonales div label {
     display: inline-block;
 }
+
 .DatosPersonales div label input {
     display: block;
 }
-.Informacion{
+
+.Informacion {
     border-color: rgb(88, 76, 96);
     background-color: rgb(211, 205, 225);
 }
+
 textarea {
     display: block;
     width: 40rem;
     height: 5rem;
 }
-.Confirmacion{
+
+.Confirmacion {
     border-color: rgb(88, 76, 96);
     background-color: rgb(175, 167, 194);
 }
-.boton{
+
+.boton {
     text-align: center;
     margin-top: 20px;
+}
+
+/*QUIÉNES SOMOS*/
+.imgQS {
+    height: 250px;
+    width: 470px;
+    /* o ajusta al tamaño que desees */
+    background-image: url(../img/QS.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 40px 20px 20px 20px;
+}
+
+.div-mision {
+    color: var(--text_3);
+    border-radius: 2vh;
+    margin: 1vh;
+    margin-top: 1%;
+    width: 65%;
+    height: 50vh;
+    vertical-align: top;
+    text-align: justify;
+    padding: 2%;
+    float: right;
+}
+
+.imgQS-2 {
+    height: 250px;
+    width: 470px;
+    background-image: url(../img/imgQS2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 40px 20px 20px 20px;
+}
+
+
+.imgQS-3 {
+    height: 250px;
+    width: 480px;
+    background-image: url(../img/trabajamos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* sombra suave */
+    margin: 40px 20px 20px 20px;
+    /* espacio alrededor, especialmente a la izquierda */
+}
+
+.div-trabajo{
+    color: var(--text_3);
+    border-radius: 2vh;
+    margin: 1vh;
+    margin-top: -250px;
+    display: inline-block;
+    width: 65%;
+    height: 50vh;
+    vertical-align: top;
+    text-align: justify;
+    padding: 2%;
+}
+
+.contenedorRS {
+    position: relative;
+    width: 100%;
+    
 }
