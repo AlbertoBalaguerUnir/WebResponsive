@@ -172,7 +172,8 @@ header .planet {
     margin-top: 1%;
     display: inline-block;
     width: 30%;
-    height: 50vh;
+    height: 100vh;
+    margin-bottom: 100px;
     vertical-align: top;
     text-align: justify;
     padding: 2%;
@@ -181,6 +182,65 @@ header .planet {
 .div-r header {
     display: flex;
 }
+
+.iconoEstrella {
+    background-image: url(../img/iconoEstrella.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    /* o el tamaño que necesites */
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    /* separación del texto */
+    vertical-align: middle;
+}
+
+.iconoManos {
+    background-image: url(../img/iconoManos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    /* o el tamaño que necesites */
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    /* separación del texto */
+    vertical-align: middle;
+}
+
+.temasDestacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.temasDestacados a span {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.cardTema {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    padding: 10px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.cardTema:hover {
+    transform: scale(1.03);
+}
+
 
 footer {
     margin-top: 20px;
@@ -346,7 +406,7 @@ textarea {
     /* espacio alrededor, especialmente a la izquierda */
 }
 
-.div-trabajo{
+.div-trabajo {
     color: var(--text_3);
     border-radius: 2vh;
     margin: 1vh;
@@ -362,5 +422,5 @@ textarea {
 .contenedorRS {
     position: relative;
     width: 100%;
-    
+
 }
