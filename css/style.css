@@ -254,6 +254,7 @@ footer {
     right: 0px;
     bottom: 0px;
 }
+
 .contenedorRS ul {
     position: absolute;
     right: 0px;
@@ -262,7 +263,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    
+
 }
 
 .contenedorRS ul li {
@@ -360,7 +361,6 @@ textarea {
 .imgQS {
     height: 20rem;
     width: 40rem;
-    /* o ajusta al tamaño que desees */
     background-image: url(../img/QS.jpg);
     background-size: cover;
     background-position: center;
@@ -368,25 +368,23 @@ textarea {
     float: right;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 40px 20px 20px 20px;
+    margin: 40px 20px 20px 30px;
 }
 
 .div-quienesSomos {
     color: var(--text_3);
     border-radius: 2vh;
-    margin: 1vh;
-    margin-top: 1%;
-    display: inline-block;
-    width: 65%;
-    height: 50vh;
-    vertical-align: top;
+    width: 60%;
+    height: auto;
     text-align: justify;
-    padding: 2%;
+    margin-left: 1%;
 }
+
 .div-quienesSomos h2 {
     margin: 1rem 0rem;
     font-size: 2rem;
 }
+
 .div-quienesSomos article span {
     font-size: 1.5rem;
 }
@@ -394,19 +392,19 @@ textarea {
 .div-mision {
     color: var(--text_3);
     border-radius: 2vh;
-    margin: 1vh;
-    margin-top: 1%;
-    width: 65%;
-    height: 50vh;
-    vertical-align: top;
+    width: auto;
+    height: auto;
     text-align: justify;
-    padding: 2%;
-    float: right;
+    margin-left: auto;
+    padding-left: 50%;
+    margin: 1% 2% 0 1%;
 }
+
 .div-mision h2 {
     margin: 1rem 0rem;
     font-size: 2rem;
 }
+
 .div-mision article span {
     font-size: 1.5rem;
 }
@@ -435,22 +433,21 @@ textarea {
     float: right;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* sombra suave */
     margin: 40px 20px 20px 20px;
-    /* espacio alrededor, especialmente a la izquierda */
-    
 }
 
-.div-trabajo {
-    color: var(--text_3);
-    border-radius: 2vh;
-    margin: 1vh;
-    margin-top: -250px;
-    display: inline-block;
-    width: 65%;
-    height: 50vh;
-    vertical-align: top;
-    text-align: justify;
-    padding: 2%;
+
+.contenedorRS {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5vh;
 }
 
+.redesSociales {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    padding: 0;
+}
