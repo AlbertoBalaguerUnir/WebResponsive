@@ -135,21 +135,66 @@ header .planet {
 
 /*Contenido*/
 .div-l {
-    /*background-color: rgba(136, 189, 218, 0.42);*/
+    background-color: rgba(136, 189, 218, 0.42);
     color: var(--text_3);
     border-radius: 2vh;
     margin: 1vh;
     margin-top: 1%;
     display: inline-block;
     width: 65%;
-    height: 50vh;
+    height: 80vh;
     vertical-align: top;
     text-align: justify;
     padding: 2%;
+    position: relative;
 }
 
 .div-l header {
     display: flex;
+    font-size: 2rem;
+}
+.div-l article {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.div-l .actualidad {
+    margin: auto;
+    margin-top: 2rem;
+    width: 80vh;
+    height: 50vh;
+
+}
+.div-l .actualidad a {
+    border-radius: 12px;
+    
+}
+.div-l .actualidad img {
+    width: 80vh;
+    height: 50vh;
+    border-radius: 1rem;
+    
+}
+.div-l .actualidad a span {
+    position: absolute;
+    bottom: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.474);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+.div-l .actualidad:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+footer {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .titulo1 {
@@ -172,7 +217,7 @@ header .planet {
     margin-top: 1%;
     display: inline-block;
     width: 30%;
-    height: 100vh;
+    height: 80vh;
     margin-bottom: 100px;
     vertical-align: top;
     text-align: justify;
@@ -242,10 +287,7 @@ header .planet {
 }
 
 
-footer {
-    margin-top: 20px;
-    text-align: right;
-}
+
 
 /*REDES SOCIALES*/
 .contenedorRS {
@@ -449,5 +491,5 @@ textarea {
     display: flex;
     justify-content: flex-start;
     margin-top: auto;
-    padding: 0;
+    padding: 1rem;
 }
