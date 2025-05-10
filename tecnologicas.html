@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--David, Zaira y Alberto-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tecnologicas</title>
+    </head>
+<body>
+    <header class="banner">
+        <a>
+            <ion-icon class="planet" name="cube"></ion-icon>
+        </a>
+        <span class="logo">neuScript</span>
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <!--Barras del menú para tamaño de pantalla de hasta 1020px:-->
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <ion-icon name="menu" aria-hidden="true"></ion-icon>
+            </label>
+            <!--Menú para formato pantalla mayor de 1020px:-->
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">¡Colabora!</a></li>
+                <li><a href="#">Noticias</a>
+                    <ul>
+                        <li><a href="#">Tecnológicas</a></li>
+                        <li><a href="#">Sociológicas</a></li>
+                    </ul>
+                </li>
+                <li><a href="quienesSomos.html">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contenedorNoticias">
+    <div class="divNoticias">
+        <a href="https://elpais.com/tecnologia/2025-03-06/por-que-deepseek-y-bluesky-son-las-primeras-grietas-en-el-poder-de-la-tecnocasta.html"
+            class="imagenNoticias" style="background-image: url('../WebResponsive/img/noticia1.png');"
+            target="_blank">
+            <span>Tecnología crítica</span>
+        </a>
+    </div>
+    <div class="divNoticias">
+        <a href="https://www.elperiodic.com/alicante/rovira-defiende-software-libre-lliurex-sistema-educativo-como-herramienta-igualdad-equidad-acceso-universal-conocimiento_1014561"
+            class="imagenNoticias" style="background-image: url('../WebResponsive/img/noticia4.png');"
+            target="_blank">
+            <span>Software libre</span>
+        </a>
+    </div>
+    </div>
+    <div class="contenedorRS">
+        <ul class="redesSociales">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

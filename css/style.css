@@ -184,6 +184,7 @@ header a{
     margin-top: 2rem;
     width: 80vh;
     height: 50vh;
+    position: relative;
 
 }
 .div-l .actualidad a {
@@ -198,7 +199,7 @@ header a{
 }
 .div-l .actualidad a span {
     position: absolute;
-    bottom: 15rem;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
@@ -307,6 +308,49 @@ footer {
 
 .cardTema:hover {
     transform: scale(1.03);
+}
+
+/*Tecnologicas*/
+.contenedorNoticias {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px
+}
+.divNoticias {
+
+    margin-top: 20px;
+    margin-left: 20px;
+    height:30vh;
+    width: 50vh;
+}
+.imagenNoticias {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    padding: 10px;
+    text-shadow: 1px 1px 4px black;
+}
+.imagenNoticias span {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.474);
+
+}
+.divNoticias a:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
 }
 
 
