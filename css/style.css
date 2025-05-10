@@ -64,14 +64,6 @@ header a{
 
 /*Barra de navegacion*/
 
-.desplegable-contenido {
-  display: none; /* Ocultar inicialmente el menú */
-  position: absolute; /* Posicionamiento absoluto dentro del contenedor */
-  background-color: #f9f9f9; /* Color de fondo */
-  min-width: 160px; /* Ancho mínimo */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
-  z-index: 1; /* Asegurar que el menú se muestre por encima de otros elementos */
-}
 .navbar {
     /*background-image: url(../img/nav.png);*/
     /*background: linear-gradient(90deg, rgb(32, 101, 119), rgb(52, 94, 115),  rgb(123, 57, 133));    */
